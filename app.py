@@ -18,6 +18,11 @@ def password_generator():
     password = generate_password()
     return render_template("password-generator.html", new_password=password)
 
+@app.route('/iframe')
+def iframe():
+    return render_template("iframe.html")
+
+
 
 if __name__=="__main__":
     app.run()

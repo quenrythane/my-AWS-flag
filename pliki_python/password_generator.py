@@ -36,12 +36,18 @@ def generate_password():
     count_of_every_char = 2
 
     # użytkownik wejście
+    password_length = 20
+    """
     while not(min_length <= password_length <= max_length):
         # print(f"Twoje hasło nie może być krótsze niż {min_length} znaków, ani dłuższe niż {max_length} znaków")
         try:
-            password_length = 20  # int(input('podaj długość hasła: '))
+            password_length = int(input('podaj długość hasła: '))
         except TypeError:
             print('coś poszło nie tak...')
+    """
+
+    # test czy mogę edytować plik w VSC
+    # moge :)
 
     # program
     password = []
